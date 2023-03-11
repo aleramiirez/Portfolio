@@ -49,3 +49,40 @@ function filtrarProyectos() {
   
   const selectFiltro = document.getElementById("filtro");
   selectFiltro.addEventListener("change", filtrarProyectos);
+
+  //3
+const subjectInput = document.getElementById('subject');
+const ccInput = document.getElementById('cc');
+const bodyInput = document.getElementById('body');
+
+function checkInputValidity(inputElement, regex) {
+    if (inputElement.value.trim() === '') {
+        inputElement.style.border = '1px solid red';
+        inputElement.insertAdjacentHTML('afterend', '<p class="text-danger">Este campo es obligatorio.</p>');
+        return false;
+    } else if (regex && !regex.test(inputElement.value.trim())) {
+        inputElement.style.border = '1px solid red';
+        inputElement.insertAdjacentHTML('afterend', '<p class="text-danger">Por favor, ingrese un valor válido.</p>');
+        return false;
+    } else {
+        inputElement.style.border = '1px solid green';
+        const errorMessage = inputElement.nextElementSibling;
+        if (errorMessage && errorMessage.classList.contains('text-danger')) {
+            errorMessage.remove();
+        }
+        return true;
+    }
+}
+
+subjectInput.addEventListener('blur', () => {
+    checkInputValidity(subjectInput, null);
+});
+
+ccInput.addEventListener('blur', () => {
+    const regex = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
+    checkInputValidity(ccInput, regex);
+});
+
+bodyInput.addEventListener('blur', () => {
+    checkInputValidity(bodyInput, null);
+});
