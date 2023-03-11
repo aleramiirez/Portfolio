@@ -28,3 +28,24 @@ resetButton.addEventListener('click', () => {
   document.body.style.backgroundColor = bgColor;
   document.body.style.color = textColor;
 });
+
+//2
+function filtrarProyectos() {
+    // Paso 1: Capturar el elemento select del filtro y obtener su valor seleccionado
+    const selectFiltro = document.getElementById("filtro");
+    const tecnologiaSeleccionada = selectFiltro.value;
+  
+    // Paso 2: Recorrer todas las cards de los proyectos y aplicar el filtro
+    const cardsProyectos = document.querySelectorAll(".demo");
+    cardsProyectos.forEach((cardProyecto) => {
+      const tecnologiasProyecto = cardProyecto.dataset.tecnologias.split(","); // Obtener las tecnologías del proyecto como un array
+      if (tecnologiasProyecto.includes(tecnologiaSeleccionada)) {
+        cardProyecto.style.display = "block"; // Mostrar la card si utiliza la tecnología seleccionada
+      } else {
+        cardProyecto.style.display = "none"; // Ocultar la card si no utiliza la tecnología seleccionada
+      }
+    });
+  }
+  
+  const selectFiltro = document.getElementById("filtro");
+  selectFiltro.addEventListener("change", filtrarProyectos);
