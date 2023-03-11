@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<!-- Para cambiar de modo oscuro "dark" a modo normal, simplemente cambiarlo por "light"-->
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Este es mi portfolio personal">
+    <meta name="keywords" content="html, css, sass, bootstrap, js, portfolio, proyectos">
+    <meta name="language" content="EN">
+    <meta name="author" content="tumail@vedruna.es">
+    <meta name="robots" content="index,follow">
+    <meta name="revised" content="Tuesday, February 28th, 2023, 23:00pm">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge, chrome1">
+
+    <style>
+        table {
+            border-collapse: collapse;
+            margin: 0 auto;
+        }
+
+        thead th {
+            background-color: blue;
+        }
+
+        tbody th {
+            background-color: rgb(61, 61, 230);
+        }
+
+        tbody td {
+            background-color: white;
+        }
+
+        thead th,
+        tbody td,
+        tbody th {
+            border: 1px solid black;
+        }
+
+        caption {
+            font-weight: bold;
+        }
+
+        th,
+        td {
+            text-align: center;
+            height: 50px;
+        }
+    </style>
+
+    <!-- Añado la fuente Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"
+        defer></script>
+
+    <!-- My css -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/imagehover.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <!-- My scripts -->
+    <script type="text/javascript" src="js/app.js" defer></script>
+
+    <!-- Icono al lado del titulo -->
+    <link rel="shortcut icon" href="media/icon/Canal_Sur.png" type="image/xpng">
+
+    <!-- Titulo -->
+    <title>Alejandro Ramirez portfolio</title>
+
+</head>
+
+<body>
+    <nav>
+        <div>
+            <div id="navgeneral">
+                <div>
+                    <a target="_blank" href="tiktok/tiktok.html"><img class="giroh" id="logo"
+                            src="media/img/vedruna.png" alt="logo fundacion" /></a>
+                </div>
+                <div id="nav">
+                    <div><a href="#introduccion">Sobre mi</a></div>
+                    <div><a href="#tecnologias">Tecnologias</a></div>
+                    <div><a href="#proyectos">Proyectos</a></div>
+                    <div><a href="#personal">Trayectoria</a></div>
+                    <div><a href="#contact">contact</a></div>
+                </div>
+
+            </div>
+            <div id="botones">
+                <button id="red">Rojo</button>
+                <button id="blue">Azul</button>
+                <button id="green">Verde</button>
+                <button id="reset">Reset</button>
+            </div>
+        </div>
+    </nav>
+    <div id="presentacion">
+        <div>
+            <h1>ALEJANDRO RAMIREZ LUQUE</h1>
+            <h1>DESARROLLADOR DE APLICACIONES WEB</h1>
+        </div>
+    </div>
+    <div id="introduccion">
+        <h1>Sobre mi</h1>
+        <div>
+            <a target="_blank" href="https://www.instagram.com/_aleramiirez_/"><img class="floating" id="retrato"
+                    src="media/img/Retrato.jpg" alt="Retrato"></a>
+            <p id="sobre_mi">Mi nombre es Alejandro Ramírez, estoy estudiando el grado superior de desarrollo de
+                aplicaciones multiplataforma (DAM). En esta web
+                vas a poder conocerme mejor en el ámbito profesional. Aqui se muestran las tecnologías que he aprendido,
+                estoy en proceso o se que voy
+                aprender.
+            </p>
+        </div>
+        <div>
+
+        </div>
+    </div>
+
+    <div class="moverse"></div>
+    <div id="tecnologias" class="n2">
+        <h3>Este es un resumen de tecnologias que he aprendido durante lo que llevo de formación profesional</h3>
+        <div id="tablas">
+            <div>
+                <h1>Frontend</h1>
+                <table class="tabla">
+                    <thead>
+                        <tr>
+                            <th>Tecnología</th>
+                            <th colspan="3">Progreso</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th><span class="html all">HTML</span></th>
+                            <td colspan="3">
+                                <div class="giro">✅</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><span class="css all">CSS</span></th>
+                            <td colspan="3">
+                                <div class="giro">✅</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><span class="javascript all">JavaScript</span></th>
+                            <td colspan="3">
+                                <div class="giro">✅</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><span class="boostrap all">Boostrap</span></th>
+                            <td colspan="3">
+                                <div class="giro">✅</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><span class="react all">React</span></th>
+                            <td colspan="3">
+                                <div class="giro">✅</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <h1>Backend</h1>
+                <table class="tabla">
+                    <thead>
+                        <tr>
+                            <th>Tecnología</th>
+                            <th colspan="3">Progreso</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th><span class="java all">Java</span></th>
+                            <td colspan="3">
+                                <div class="giro">🔃</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><span class="mysql all">MySQL</span></th>
+                            <td colspan="3">
+                                <div class="giro">✅</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><span class="mongodb all">MongoDB</span></th>
+                            <td colspan="3">
+                                <div class="giro">🔃</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><span>Maven</span></th>
+                            <td colspan="3">
+                                <div class="giro">❌</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><span>Springboot</span></th>
+                            <td colspan="3">
+                                <div class="giro">❌</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div>
+                <h1>DevOps</h1>
+                <table class="tabla">
+                    <thead>
+                        <tr>
+                            <th>Tecnología</th>
+                            <th colspan="3">Progreso</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th><span class="git all">Git</span></th>
+                            <td colspan="3">
+                                <div class="giro">✅</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><span>Docker</span></th>
+                            <td colspan="3">
+                                <div class="giro">❌</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><span>Jenkins</span></th>
+                            <td colspan="3">
+                                <div class="giro">❌</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><span>Kubernetes</span></th>
+                            <td colspan="3">
+                                <div class="giro">❌</div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th><span>Amazon Web Services</span></th>
+                            <td colspan="3">
+                                <div class="giro">❌</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="moversealreves"></div>
+    <form>
+        <label for="filtro">Elige la tecnología que te interese:</label>
+        <select name="modulo" id="filtro">
+            <option value="todos">Todos</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JavaScript</option>
+            <option value="react">React</option>
+            <option value="nodejs">NodeJS</option>
+            <option value="visualstudiocode">VisualStudioCode</option>
+        </select>
+    </form>
+    <div id="proyectos" class="1">
+        <div class="demo" data-tecnologias="html,css,visualstudiocode,react,nodejs,javascript,todos">
+            <h3>Youtify</h3>
+            <figure class="imghvr-shutter-in-out-horiz"><img id="youtify" src="media/img/Youtify_Logo.png"
+                    alt="logo youtify">
+                <figcaption>
+                    <h3>YOUTIFY</h3>
+                    <p class="carta">Este proyecto lo he realizado junto a dos compañeros. Se trata consumir las APIs de
+                        Spotify y
+                        Youtube en una misma página,
+                        dejando buscar tanto por youtube como por spotify desde la misma web. Para realizar Youtify se
+                        ha utilizado <span class="react">React, </span>
+                        <span class="nodejs">Node, </span> <span class="javascript">JavaScript, </span> <span
+                            class="html">HTML, </span> <span class="css">CSS y </span>
+                        <span class="visualstudiocode">VisualStudioCode.</span> Esta web se puede encontrar en internet
+                        desde este enlace:
+                    </p>
+                    <a target="_blank" href="https://albertof17.github.io/Youtify"
+                        style="position: relative;">Youtify</a>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="demo" data-tecnologias="html,css,visualstudiocode,todos">
+            <h3>EcoZone</h3>
+            <figure class="imghvr-shutter-in-out-horiz"><img id="EcoZone" src="media/img/logo_ecozone.png"
+                    alt="logo youtify">
+                <figcaption>
+                    <h3>EcoZone</h3>
+                    <p class="carta">Este trabajo se basaba en realizar una página web para una empresa. Se realizó
+                        junto a otros dos
+                        participantes. Es una
+                        página web para una empresa inventada por nosotros llamada EcoZone. Cuyo objetivo era incentivar
+                        a la gente a reciclar
+                        y mantener un mundo más limpio. Este trabajo se ha realizado con <span class="html">HTML,
+                        </span><span class="css">CSS y </span>
+                        <span class="visualstudiocode">VisualStudioCode.</span>
+                </figcaption>
+            </figure>
+        </div>
+    </div>
+    <div class="moverse"></div>
+    <div id="personal" class="n2">
+        <div>
+            <h1>TRAYECTORIA</h1>
+            <p>Siempre me ha llamado la atención la informática y en bachillerato decidí estudiar algo dentro de ese
+                entorno. Me saque el título del
+                bachillerato tecnológico en el Martinez Montañez, donde empeze a cogerle el gusto a programación y base
+                de
+                datos en la asignatura de
+                computación y programación. Ha día de hoy estoy estudiando DAM en el Santa Joaquina de Vedruna y dentro
+                de
+                poco tendré el título de
+                desarrollador de aplicaciones multiplataforma.</p>
+        </div>
+        <div>
+            <h1>Objetivos</h1>
+            <p>Actualmente estoy centrado en acabar el grado con la mejor nota posible, tras ello, me gustaría empezar a
+                trabajar en una empresa y poco
+                a poco ir adquiriendo experiencia. Tal vez en un futuro me planté sacarme el título de desarrollador de
+                aplicaciones web ya que al hacer DAM
+                me convalidan el primer año de este, y así poder tener un título más y más experiencia.</p>
+        </div>
+    </div>
+    <div class="moversealreves"></div>
+    <div class="box">
+        <input class="sr-only checkbox" id="checkbox" type="checkbox" checked="checked" />
+        <label class="label" for="checkbox">
+            <div class="head">
+                <div class="face">
+                    <div class="face__smile"></div>
+                    <div class="face__sleep"></div>
+                </div>
+            </div>
+        </label>
+    </div>
+    <div id="contact" class="container">
+        <form action="mailto:tuMail@vedruna.es" method="get" class="mt-2 mx-auto">
+            <fieldset class="form-row reset p-4 align-items-center border border-primary ">
+                <legend class="reset text-light border border-primary px-2 py-1">Contact me</legend>
+
+                <div class="form-group row g-3 mt-1 mx-auto">
+                    <label for="subject" class="col-sm-2 col-form-label text-primary">Asunto:</label>
+                    <div class="col-sm-10">
+                        <input type="text" id="subject" class="form-control text-info" name="subject" required />
+                    </div>
+                </div>
+
+                <div class="form-group row g-3 mt-1 mx-auto">
+                    <label for="cc" class="col-sm-2 col-form-label text-primary">CC:</label>
+                    <div class="col input-group mb-2">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">@</div>
+                        </div>
+                        <input type="email" id="cc" class="form-control text-info" name="cc"
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" />
+                    </div>
+                </div>
+
+                <div class="row g-3 mt-2 mx-auto">
+                    <label for="body" class="form-label text-primary">Cuerpo del mensaje: </label> <br />
+                    <textarea id="body" class="form-control text-info mt-2 w-10" name="body"
+                        placeholder="Aqui va el cuerpo del mensaje..." rows="15" cols="40" required></textarea>
+                </div>
+
+                <div class="row g-3 mt-2 w-25 mx-auto">
+                    <input id="sendBttn" class="btn btn-primary btn-lg" type="submit" value="Send" />
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>
